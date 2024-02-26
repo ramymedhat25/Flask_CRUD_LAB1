@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block title %}
+    <title>Base</title>
+    {% endblock %}
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li class="search">
+          <form action="#" method="get">
+            <input type="text" placeholder="Search here" name="search" />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+
+    {% block body %} Base {% endblock %}
+  </body>
+</html>
